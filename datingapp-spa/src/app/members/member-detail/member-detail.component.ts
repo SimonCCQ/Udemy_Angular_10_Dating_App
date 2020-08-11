@@ -32,10 +32,8 @@ export class MemberDetailComponent implements OnInit {
     ];
 
     this.route.data.subscribe(data => {
-      // tslint:disable-next-line: no-string-literal
       this.user = data['user'];
       this.galleryImages = this.getImages();
-
     });
 
 
